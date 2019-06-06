@@ -8,13 +8,16 @@
     <title>Unit-4-Game</title>
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Added a link to our external stylesheet-->
     <link rel="stylesheet" href="../unit-4-game/assets/css/style.css">
     <link rel="stylesheet" href="../unit-4-game/assets/css/reset.css">
 </head>
 
 <body>
-    <div id="win-lose-counter"></div>
+        
+        <div id="win-lose-counter"></div>
 
     <div id="total-score"></div>
     <div id="myguess"></div>
@@ -22,48 +25,83 @@
 
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
         <div class="row">
-            <div class="col-12 col-md-12">Crystal Collector!</div>
-            <div class="col-6 col-md-4">Instructions</div>
-        </div>
-
-        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-        <div class="row">
-            <div id="computer-score">Computer Score: </div>
-            <div id="wins">Wins</div>
-            <div id="losses">Losses</div>
-
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Circle Collector!</h1>
+                </div>
+              </div>
         </div>
         <div class="row">
-            <div id="userGuess-Total">userGuess Total</div>
-        </div>
-        <div class="row">
-            <div class="col-4"></div>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                <div class="display-4">Instructions</div>
+                <br>
+                <br>
+                <br>  
+                <p>You will be given a random number at the start of the game.</p>
+                <br>
+                <p>There are four circles below. By clicking on a circle you will add a specific amount of points to
+                    your total score.</p>
+                <br>
+                <p>You win the game by matching your total score to random number. You lose the game if your total score
+                    goes above the random number.
+                </p>
+                <br>
+                <p>The value of each circle is hidden from you until you click on it.
+                </p>
+                <br>
+                <p>Each time when the game starts, the game will change the values of each circle.</p>
+                <br>
+                <br>
+                <br>
+                <br>      
+            </div>
+            </div>        
+            </div>
+                <br>
+            <div class="row">
+                <div class="col-sm-4">
+            <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+            <div id="computer-score"></div>
+            </div>
+            </div>
+            </div>
+            <div class="col-sm-2">
+            <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+            <h1>Wins: <div id="wins"></div></h1>
+            <br>
+            <h1>Losses: <div id="losses"></div></h1>
+            </div>
+            </div>
+            </div>
 
+        </div>
+
+        <br>
+        
+        <div class="row">
             <div class="card-group">
-                <div class="col-md-3"></div>
                 <img src="http://cdn.shopify.com/s/files/1/1215/4044/products/cyanvis_5S_lean_G1010R_legend_grande.png?v=1460275100"
-                    class="crystal1" alt="...">
-                <div class="col-md-3"></div>
-
+                    class="crystal1 col-md-3" alt="...">
                 <img src="https://cdn.shopify.com/s/files/1/1215/4044/products/cyanvis_5S_lean_G1010Y_legend.png?v=1460275100"
-                    class="crystal2" alt="...">
-                <div class="col-md-3"></div>
-
+                    class="crystal2 col-md-3" alt="...">
                 <img src="https://cdn.shopify.com/s/files/1/1215/4044/products/cyanvis_5S_lean_G1010B_legend.png?v=1460275100"
-                    class="crystal3" alt="...">
-                <div class="col-md-3"></div>
-
+                    class="crystal3 col-md-3" alt="...">
                 <img src="https://cdn.shopify.com/s/files/1/1215/4044/products/cyanvis_5S_lean_G1010G_legend.png?v=1460275100"
-                    class="crystal4" alt="...">
-
+                    class="crystal4 col-md-3" alt="...">
             </div>
         </div>
-
-
-
-
+        <br>
+        <div class="row">
+                <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1>Your Total score is: <div id="userGuess-Total"></div></h1>
+            </div>
+            </div>
+            </div>
     </div>
-
     <script src="../unit-4-game/assets/javascript/game.js"></script>
 </body>
 
