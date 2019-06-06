@@ -15,15 +15,7 @@
     <link rel="stylesheet" href="../unit-4-game/assets/css/reset.css">
 </head>
 
-<body>
-        
-        <div id="win-lose-counter"></div>
-
-    <div id="total-score"></div>
-    <div id="myguess"></div>
-    <div class="container">
-
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<body>  
         <div class="row">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
@@ -35,39 +27,32 @@
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                 <div class="display-4">Instructions</div>
-                <br>
-                <br>
-                <br>  
+                <br><br><br>  
                 <p>You will be given a random number at the start of the game.</p>
                 <br>
                 <p>There are four circles below. By clicking on a circle you will add a specific amount of points to
                     your total score.</p>
                 <br>
                 <p>You win the game by matching your total score to random number. You lose the game if your total score
-                    goes above the random number.
-                </p>
+                    goes above the random number.</p>
                 <br>
-                <p>The value of each circle is hidden from you until you click on it.
-                </p>
+                <p>The value of each circle is hidden from you until you click on it.</p>
                 <br>
                 <p>Each time when the game starts, the game will change the values of each circle.</p>
-                <br>
-                <br>
-                <br>
-                <br>      
+                <br><br><br><br>      
             </div>
             </div>        
             </div>
                 <br>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-lg-3">
             <div class="jumbotron jumbotron-fluid">
             <div class="container">
             <div id="computer-score"></div>
             </div>
             </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-lg-2">
             <div class="jumbotron jumbotron-fluid">
             <div class="container">
             <h1>Wins: <div id="wins"></div></h1>
@@ -76,11 +61,16 @@
             </div>
             </div>
             </div>
+            <div class="col-lg-2">
 
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                <h1>Your Total score is: <div id="userGuess-Total"></div></h1>
+            </div>
+            </div>                
+            </div>
         </div>
-
         <br>
-        
         <div class="row">
             <div class="card-group">
                 <img src="http://cdn.shopify.com/s/files/1/1215/4044/products/cyanvis_5S_lean_G1010R_legend_grande.png?v=1460275100"
@@ -93,14 +83,6 @@
                     class="crystal4 col-md-3" alt="...">
             </div>
         </div>
-        <br>
-        <div class="row">
-                <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1>Your Total score is: <div id="userGuess-Total"></div></h1>
-            </div>
-            </div>
-            </div>
     </div>
     <script src="../unit-4-game/assets/javascript/game.js"></script>
 </body>
